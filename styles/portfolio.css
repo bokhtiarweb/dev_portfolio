@@ -6,9 +6,8 @@
   font-variation-settings:
     "wdth" 100;
 }
-*{
-    margin: 0;
-    padding: 0;
+.text_center{
+    text-align: center;
 }
 .header{
     background-image: url('../images/developer.png'), url('../images/header_bg.png');
@@ -101,13 +100,16 @@ main{
     max-width: 1140px;
     margin: 0 auto;
 }
+main section{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
 
 /* About section */
 .about{
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
-    margin-top: 130px;
 }
 .about .about_desk{
     margin-top: 20px;
@@ -121,3 +123,92 @@ main{
     font-weight: 600;
 }
 
+/* Skills section */
+.skills > h3.section_title{
+    margin-bottom: 30px;
+}
+.skill_container{
+    margin-top: 55px;
+    display: flex;
+    gap: 24px;
+}
+.skill{
+    padding: 30px;
+    border: 5px;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.6);
+}
+.skill h4.skill_title{
+    margin: 20px 0px;
+}
+
+/* Resume Section */
+.resume_container{
+    display: flex;
+    gap: 24px;
+}
+.resume_container h4.experience_title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+h3.resume_column_title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.resume_container h5.experience_subtitle{
+    color: #757575;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.resume_container .experience_description{
+    color: #757575;
+    font-weight: normal;
+    font-size: 16px;
+}
+.resume hr{
+    margin: 30px 5px;
+}
+.resume_download_cv{
+    margin-top: 60px;
+}
+
+/* Footer Styles */
+footer{
+    padding: 130px 230px;
+    display: flex;
+    gap: 117px;
+}
+.footer_column{
+    width: 50%;
+    box-sizing: border-box;
+}
+.footer_column > h3.section_title{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.social_icon{
+    display: flex;
+    gap: 25px;
+}
+
+footer input[type='text'], footer input[type='email']{
+    height: 64px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+footer textarea{
+    width: 100%;
+    display: block;
+    height: 180px;
+    border: none;
+}
+footer input[type='submit']{
+    margin-top: 20px;
+}
