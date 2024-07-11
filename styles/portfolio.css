@@ -38,6 +38,7 @@ nav{
     padding: 18px 30px;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
 .section_title{
     font-size: 35px;
