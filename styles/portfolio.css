@@ -109,7 +109,7 @@ main section{
 /* About section */
 .about{
     border-radius: 10px;
-    padding: 130px 150px;
+    padding: 5px 150px;
     text-align: center;
 }
 .about .about_desk{
@@ -212,4 +212,57 @@ footer textarea{
 }
 footer input[type='submit']{
     margin-top: 20px;
+}
+.hide {
+    display: none;
+}
+
+/* Responsive for small or androiad phone */
+@media screen and (max-width: 576px) {
+    .skill_container, .resume_container, footer{
+        flex-direction: column;
+    }
+    footer{
+        padding: 20px;
+    }
+    .footer_column{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+    nav{
+        flex-direction: column;
+        margin: auto;
+    }
+    nav h2.nav_title{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    nav ul{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+        margin: 0;
+    }
+    .banner > .banner_content{
+        width: auto;
+        margin-top: 0;
+    }
+    .banner > .banner_profile_pic{
+        width: auto;
+    }
+    button.btn_primary{
+        margin-top: 10px;
+    }
+    .about{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .about_items{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
